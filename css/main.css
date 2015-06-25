@@ -356,3 +356,40 @@ body {
       #process .safeguards .item-3 h4 {
         margin-top: 22px;
         margin-left: 41px; }
+
+#team {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  padding-top: 90px; }
+  #team h2, #team .reviews .sub-text, .reviews #team .sub-text, #team .what-we-do .sub-text, .what-we-do #team .sub-text {
+    font-size: 38px;
+    width: 100%;
+    text-align: center;
+    color: #2b2b2b; }
+  #team .sub-text {
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    color: #686868; }
+  #team .team-memb {
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 50px; }
+    #team .team-memb h3 {
+      color: #2b2b2b;
+      font-size: 24px;
+      padding-top: 20px; }
+    #team .team-memb h5 {
+      color: #555555;
+      font-size: 17px;
+      margin-top: 6px; }
+  #team .team-memb-1 {
+    margin-left: 65px; }
+  #team .team-memb-2 {
+    margin-left: 143px; }
+  #team .team-memb-3 {
+    margin-left: 128px; }
+  #team .team-memb-4 {
+    margin-left: 169px; }
