@@ -1,9 +1,16 @@
 $(document).ready( function () {
 	
-	// Main navigation
+	// Main navigation, circles navigation
 	$('.page-navigation').find('a').click( function (){
 		var scrollId = $(this).attr('href');
 		$(this).find('a').removeClass('active');
+		$(window).scrollTo(scrollId, 1000, {'margin': 'true'});
+    return false;
+	});	
+
+	$('nav.circles').find('.out-border').click( function (){
+		var scrollId = $(this).find('a').attr('href');
+		$(this).find('a').parents('out-border').removeClass('active');
 		$(window).scrollTo(scrollId, 1000, {'margin': 'true'});
     return false;
 	});	
@@ -79,6 +86,9 @@ $(document).ready( function () {
 		categoryId = "." + categoryId;
 		$('.page-navigation').find('a').removeClass('active');
 		$('.page-navigation').find(categoryId).addClass('active');
+		
+		$('nav.circles').find('.out-border').removeClass('active');
+		$('nav.circles').find(categoryId).parents('.out-border').addClass('active');
 	}
 
 	// Portfolio navigation

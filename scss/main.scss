@@ -13,6 +13,99 @@ body{
 	width: 1300px;
 	margin: 0 auto;
 }
+
+nav.circles{
+	position: fixed;
+	z-index: 5;
+	top: 219px;
+	right: 32px;
+	width: 20px;
+	height: 221px;
+	a{
+		background: #7a848c;
+		border-radius: 50%;
+		width: 4px;
+		height: 4px;
+		display: block;	
+		position: relative;
+		top: 3px;
+  	left: 3px; 
+	}
+	.out-border{
+		display: block;
+		width: 12px;
+		height: 12px;
+		background: none;
+		border-radius: 50%;
+		margin-top: 31px;
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+		.label{
+			position: absolute;
+			font-size: 15px;
+			color: #fff;
+			text-align: center;
+			padding: 14px 13px;
+			background: #000;
+			background: rgba(0,0,0,.6);
+			left: -103px;
+			top: -21px;
+			border-radius: 3px;
+		 	opacity: 0;  
+			&:after{
+				display: block;
+				content: '';
+				background: url('../img/label-triangle.png');
+				width: 6px;
+				height: 42px;
+				position: absolute;
+			  right: -6px;
+  			top: 4px;
+			}
+		}
+		&:hover,
+		&.active{
+			width: 10px;
+			height: 10px;
+			border: 1px solid #7a848c;
+			a{
+				background: $green;
+			}
+			.label{
+				 top: -22px;
+						/*left: -104px; */		
+			}
+		}
+		&:hover{
+			overflow: visible;
+			.label{
+				-webkit-transition-property: opacity;
+				transition-property: opacity;
+				-webkit-transition-duration: .8s;
+				transition-duration: .8s;
+				opacity: 1;
+			}
+		}
+		.reviews .label, 
+		.projects .label{
+			left: -96px;
+		}
+		.wwd .label{
+			left: -123px;
+		}
+		.process .label{
+			left: -94px;
+		}
+		.our-team .label{
+			left: -107px;
+		}
+		.contacts .label{
+			left: -101px;
+		}
+	}
+
+}
 .top-line{
 	height: 70px;
 	width: 100%;
