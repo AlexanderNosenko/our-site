@@ -39,7 +39,8 @@ nav.circles {
   top: 219px;
   right: 32px;
   width: 20px;
-  height: 221px; }
+  height: 221px;
+  background: none; }
   nav.circles a {
     background: #7a848c;
     border-radius: 50%;

@@ -34,12 +34,12 @@ $(document).ready( function () {
 	//Section positions
 	var sectionsPositions = {
 		'about' : 0,
-		'projects' : 883,
-		'reviews' : 1790,
-		'wwd' : 2606,
-		'process' : 3146,
-		'team' : 4299,
-		'contacts' : 4578
+		'projects' : 882,
+		'reviews' : 1789,
+		'wwd' : 2605,
+		'process' : 3145,
+		'team' : 4298,
+		'contacts' : 4577
 	}
 
 	// Function for getting scrolltop 
@@ -57,6 +57,7 @@ $(document).ready( function () {
 
 	$(window).scroll( function () {
 		currentScrollPosition = getScrollTop();	
+		console.log(currentScrollPosition);
 
 		if (currentScrollPosition >= sectionsPositions.about &&
 				currentScrollPosition < sectionsPositions.projects){
