@@ -76,9 +76,21 @@ $(document).ready( function () {
 	});
 	
 	function hightlightActive (categoryId){
-
 		categoryId = "." + categoryId;
 		$('.page-navigation').find('a').removeClass('active');
 		$('.page-navigation').find(categoryId).addClass('active');
 	}
+
+	// Portfolio navigation
+	$('#identity, #blogs, #online-stores, #lp').hide();
+
+	$('.pf-nav-item').click( function () {
+		var currentId = $(this).attr('data-href');
+		$('.pf-nav-item').removeClass('active');
+		$(this).addClass('active');
+		$('.portfolio-works').fadeOut(600);
+		setTimeout(function() { 
+			$(currentId).fadeIn(800);
+		}, 600);		
+	});
 });

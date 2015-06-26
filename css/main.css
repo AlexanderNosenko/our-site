@@ -145,7 +145,8 @@ body {
       font-size: 17px;
       margin: 0 23px;
       padding: 0 5px 8px 5px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       #projects .portfolio-nav a:hover, #projects .portfolio-nav a.active {
         padding-bottom: 4px;
         border-bottom: 4px solid #ff9800; }
