@@ -85,7 +85,8 @@ nav.circles {
       height: 10px;
       border: 1px solid #7a848c; }
       nav.circles .out-border:hover a, nav.circles .out-border.active a {
-        background: #009688; }
+        background: #009688;
+        text-decoration: none; }
       nav.circles .out-border:hover .label, nav.circles .out-border.active .label {
         top: -22px;
         /*left: -104px; */ }
