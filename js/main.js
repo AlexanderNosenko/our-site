@@ -19,6 +19,17 @@ $(document).ready( function () {
 	$('.top-line').find('.message-btn').click( function (){
 		$(window).scrollTo('#contact-us', 1000, {'margin': 'true'});	
 	});
+
+	// Lang switcher functional
+	$('.lang-switcher').click( function (){
+		$(this).toggleClass('active');
+	});
+
+	$(document).click( function (event) {
+		if ($(event.target).closest(".lang-switcher").length) return;
+  		$('.lang-switcher').removeClass('active');
+    	event.stopPropagation();	
+	});
 	
 	//Section positions
 	var sectionsPositions = {

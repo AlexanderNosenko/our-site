@@ -156,15 +156,60 @@ nav.circles{
 	}
 	.lang-switcher{
 		float: right;
-		margin-top: 29px;
-		height: 18px;
+		margin-top: 24px;
+		height: 22px;
 		width: 45px;
-		overflow: hidden;
+ 		overflow: hidden; 
+		position: relative;
 		color: #fff;
 		background: url('../img/select-btn.png');
 		background-repeat: no-repeat;
 		background-position: bottom right;
 		cursor: pointer;
+		&.active{
+			overflow: visible;
+		}
+		.langs-block{
+			width: 94px;
+			height: 138px;
+			background: #fff;
+			border-radius: 4px;
+			position: absolute;
+			left: -47px;
+			top: 34px;
+			font-size: 17px;
+			color: #444343;
+			border: 1px solid #c9cbcd;
+			li{
+				padding: 15px 0 15px 32px;
+				position: relative;
+				a{
+					text-decoration: none;
+					color: #444343;
+				}
+				&.active{
+					a{
+						color: $green;	
+					}
+				}
+				&.active:before{
+					display: block;
+					content: '';
+					background: url('../img/lang-switcher-checkbox.png');
+					width: 11px;
+					height: 8px;
+					position: absolute;
+					top: 19px;
+					left: 13px;
+				}
+			}
+			.line{
+				height: 1px;
+				width: 63px;
+				background: #c9cbcd;
+				margin-left: 31px;
+			}
+		}
 	}
 }
 

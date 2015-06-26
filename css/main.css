@@ -152,15 +152,51 @@ nav.circles {
       float: left; }
   .top-line .lang-switcher {
     float: right;
-    margin-top: 29px;
-    height: 18px;
+    margin-top: 24px;
+    height: 22px;
     width: 45px;
     overflow: hidden;
+    position: relative;
     color: #fff;
     background: url("../img/select-btn.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     cursor: pointer; }
+    .top-line .lang-switcher.active {
+      overflow: visible; }
+    .top-line .lang-switcher .langs-block {
+      width: 94px;
+      height: 138px;
+      background: #fff;
+      border-radius: 4px;
+      position: absolute;
+      left: -47px;
+      top: 34px;
+      font-size: 17px;
+      color: #444343;
+      border: 1px solid #c9cbcd; }
+      .top-line .lang-switcher .langs-block li {
+        padding: 15px 0 15px 32px;
+        position: relative; }
+        .top-line .lang-switcher .langs-block li a {
+          text-decoration: none;
+          color: #444343; }
+        .top-line .lang-switcher .langs-block li.active a {
+          color: #009688; }
+        .top-line .lang-switcher .langs-block li.active:before {
+          display: block;
+          content: '';
+          background: url("../img/lang-switcher-checkbox.png");
+          width: 11px;
+          height: 8px;
+          position: absolute;
+          top: 19px;
+          left: 13px; }
+      .top-line .lang-switcher .langs-block .line {
+        height: 1px;
+        width: 63px;
+        background: #c9cbcd;
+        margin-left: 31px; }
 
 .top-banner {
   background: url("../img/header-bg.jpg");
