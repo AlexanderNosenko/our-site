@@ -506,4 +506,30 @@ body{
 			color: #fff;
 		}
 	}
+	.contact-info{
+		margin: 415px 0 0 207px;
+		display: inline-block;
+		color: #fefefe;
+		font-size: 24px;
+		.skype,
+		.mail{
+			clear: both;
+			display: block;
+			span{
+			  position: relative;
+				top: -5px;
+			}
+		}
+		.ico{
+			float: left;
+			margin-right: 17px;
+		}
+		.line{
+			background: url("../img/line.png");
+			width: 385px;
+			height: 2px;
+			background-repeat: no-repeat;
+			margin: 15px 0 15px 51px;
+		}
+	}
 }

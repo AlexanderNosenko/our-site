@@ -441,3 +441,25 @@ body {
       outline: none;
       cursor: pointer;
       color: #fff; }
+  #contact-us .contact-info {
+    margin: 415px 0 0 207px;
+    display: inline-block;
+    color: #fefefe;
+    font-size: 24px; }
+    #contact-us .contact-info .skype,
+    #contact-us .contact-info .mail {
+      clear: both;
+      display: block; }
+      #contact-us .contact-info .skype span,
+      #contact-us .contact-info .mail span {
+        position: relative;
+        top: -5px; }
+    #contact-us .contact-info .ico {
+      float: left;
+      margin-right: 17px; }
+    #contact-us .contact-info .line {
+      background: url("../img/line.png");
+      width: 385px;
+      height: 2px;
+      background-repeat: no-repeat;
+      margin: 15px 0 15px 51px; }
