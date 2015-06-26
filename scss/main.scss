@@ -34,7 +34,8 @@ body{
 			display: block;
 			float: left;
 			padding: 22px 23px 18px 23px;
-			&:hover{
+			&:hover,
+			&.active{
 				background: $grey;
 				border-bottom: 7px solid $orange;
 				color: #444343;
@@ -99,7 +100,7 @@ body{
 	}
 }
 
-.about-us{
+#about-us{
 	width: 100%;
 	display: inline-block;
 	margin-top: 651px;
@@ -109,13 +110,13 @@ body{
 	text-align: center;
 	font-size: 38px;
 }
-.projects{
+#projects{
 	width: 100%;
 	display: inline-block;
 	background: #fff;
 	position: relative;
 	z-index: 2;	
-	padding-top: 45px;
+	padding-top: 75px;
 	h2{
 		font-size: 38px;
 		text-align: center;
@@ -203,7 +204,7 @@ body{
 	}
 }
 
-.reviews{
+#reviews{
 	height: 816px;
 	background: url('../img/reviews-bg.jpg');
 	background-position: top center;
@@ -259,7 +260,7 @@ body{
 	}
 }
 
-.what-we-do{
+#what-we-do{
 	padding-top: 90px;
 	position: relative;
 	z-index: 2;

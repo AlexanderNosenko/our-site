@@ -5,7 +5,7 @@ body {
   margin: 0;
   background: #fff; }
 
-h1, h2, .reviews .sub-text, .what-we-do .sub-text, h3, h4, h5, h6, ul, li, em, strong, pre, code {
+h1, h2, #reviews .sub-text, #what-we-do .sub-text, h3, h4, h5, h6, ul, li, em, strong, pre, code {
   padding: 0;
   margin: 0;
   line-height: 1em;
@@ -53,7 +53,7 @@ body {
       display: block;
       float: left;
       padding: 22px 23px 18px 23px; }
-      .top-line .page-navigation a:hover {
+      .top-line .page-navigation a:hover, .top-line .page-navigation a.active {
         background: #e7e7e7;
         border-bottom: 7px solid #ff9800;
         color: #444343; }
@@ -93,7 +93,7 @@ body {
   background-position: top center;
   position: fixed;
   z-index: 1; }
-  .top-banner h2, .top-banner .reviews .sub-text, .reviews .top-banner .sub-text, .top-banner .what-we-do .sub-text, .what-we-do .top-banner .sub-text {
+  .top-banner h2, .top-banner #reviews .sub-text, #reviews .top-banner .sub-text, .top-banner #what-we-do .sub-text, #what-we-do .top-banner .sub-text {
     color: #fff;
     width: 100%;
     font-size: 45px;
@@ -108,7 +108,7 @@ body {
     position: absolute;
     bottom: 24px; }
 
-.about-us {
+#about-us {
   width: 100%;
   display: inline-block;
   margin-top: 651px;
@@ -118,27 +118,27 @@ body {
   text-align: center;
   font-size: 38px; }
 
-.projects {
+#projects {
   width: 100%;
   display: inline-block;
   background: #fff;
   position: relative;
   z-index: 2;
-  padding-top: 45px; }
-  .projects h2, .projects .reviews .sub-text, .reviews .projects .sub-text, .projects .what-we-do .sub-text, .what-we-do .projects .sub-text {
+  padding-top: 75px; }
+  #projects h2, #projects #reviews .sub-text, #reviews #projects .sub-text, #projects #what-we-do .sub-text, #what-we-do #projects .sub-text {
     font-size: 38px;
     text-align: center;
     color: #009688; }
-  .projects .sub-text {
+  #projects .sub-text {
     color: #7a7978;
     font-size: 17px;
     text-align: center; }
-  .projects .portfolio-nav {
+  #projects .portfolio-nav {
     margin: 50px auto;
     text-align: center;
     width: 1225px;
     border-bottom: 1px solid #d0d0d0; }
-    .projects .portfolio-nav a {
+    #projects .portfolio-nav a {
       display: inline-block;
       text-decoration: none;
       color: #444343;
@@ -146,25 +146,25 @@ body {
       margin: 0 23px;
       padding: 0 5px 8px 5px;
       text-align: center; }
-      .projects .portfolio-nav a:hover, .projects .portfolio-nav a.active {
+      #projects .portfolio-nav a:hover, #projects .portfolio-nav a.active {
         padding-bottom: 4px;
         border-bottom: 4px solid #ff9800; }
-      .projects .portfolio-nav a.active {
+      #projects .portfolio-nav a.active {
         font-weight: bold; }
-  .projects .portfolio-works {
+  #projects .portfolio-works {
     width: 1225px;
     margin: 0 auto; }
-    .projects .portfolio-works .portfolio-item {
+    #projects .portfolio-works .portfolio-item {
       width: 261px;
       height: 261px;
       overflow: hidden;
       position: relative;
       float: left;
       margin: 0 0 50px 60px; }
-      .projects .portfolio-works .portfolio-item img {
+      #projects .portfolio-works .portfolio-item img {
         position: relative;
         z-index: 2; }
-      .projects .portfolio-works .portfolio-item .mask {
+      #projects .portfolio-works .portfolio-item .mask {
         top: 0;
         right: 0;
         position: absolute;
@@ -174,106 +174,106 @@ body {
         padding: 28px 36px;
         color: #fff;
         opacity: 0; }
-        .projects .portfolio-works .portfolio-item .mask h3 {
+        #projects .portfolio-works .portfolio-item .mask h3 {
           font-size: 24px;
           padding-bottom: 4px; }
-        .projects .portfolio-works .portfolio-item .mask p {
+        #projects .portfolio-works .portfolio-item .mask p {
           font-size: 17px;
           line-height: 26px; }
-        .projects .portfolio-works .portfolio-item .mask .view-btn {
+        #projects .portfolio-works .portfolio-item .mask .view-btn {
           display: inline-block;
           padding: 6px 28px;
           border-radius: 3px;
           border: 1px solid #fff;
           cursor: pointer; }
-      .projects .portfolio-works .portfolio-item:hover .mask {
+      #projects .portfolio-works .portfolio-item:hover .mask {
         -webkit-transition-property: opacity;
         transition-property: opacity;
         -webkit-transition-duration: .8s;
         transition-duration: .8s;
         opacity: 1; }
-    .projects .portfolio-works .portfolio-item:nth-child(4n+1) {
+    #projects .portfolio-works .portfolio-item:nth-child(4n+1) {
       margin-left: 0; }
 
-.reviews {
+#reviews {
   height: 816px;
   background: url("../img/reviews-bg.jpg");
   background-position: top center;
   position: relative;
   z-index: 2; }
-  .reviews h2, .reviews .sub-text {
+  #reviews h2, #reviews .sub-text {
     display: inline-block;
     color: #fff;
     font-size: 38px;
     margin-top: 90px;
     text-align: center;
     width: 100%; }
-  .reviews .sub-text {
+  #reviews .sub-text {
     color: #e0e0e0;
     font-size: 17px;
     margin-top: 13px; }
-  .reviews .reviews-container {
+  #reviews .reviews-container {
     width: 1300px;
     margin: 50px auto; }
-    .reviews .reviews-container .reviews-item {
+    #reviews .reviews-container .reviews-item {
       background: url("../img/feedback-bg.png");
       width: 397px;
       height: 249px;
       float: left;
       margin: 0 0 54px 54px;
       position: relative; }
-      .reviews .reviews-container .reviews-item img {
+      #reviews .reviews-container .reviews-item img {
         border-radius: 50%;
         display: inline-block;
         margin-left: 19px;
         margin-top: -22px; }
-      .reviews .reviews-container .reviews-item .name {
+      #reviews .reviews-container .reviews-item .name {
         position: absolute;
         top: 0;
         left: 154px;
         top: 25px;
         font-size: 21px; }
-      .reviews .reviews-container .reviews-item .text-review {
+      #reviews .reviews-container .reviews-item .text-review {
         width: 342px;
         text-align: justify;
         margin: 7px auto;
         font-size: 15px; }
-    .reviews .reviews-container .reviews-item:nth-child(3n+1) {
+    #reviews .reviews-container .reviews-item:nth-child(3n+1) {
       margin-left: 0; }
 
-.what-we-do {
+#what-we-do {
   padding-top: 90px;
   position: relative;
   z-index: 2;
   background: #fff;
   padding-bottom: 350px; }
-  .what-we-do h2, .what-we-do .sub-text {
+  #what-we-do h2, #what-we-do .sub-text {
     color: #009688;
     font-size: 38px;
     width: 100%;
     text-align: center; }
-  .what-we-do .sub-text {
+  #what-we-do .sub-text {
     font-size: 17px;
     color: #7a7978;
     margin-top: 13px; }
-  .what-we-do .wwd-container {
+  #what-we-do .wwd-container {
     width: 1240px;
     margin: 32px auto; }
-    .what-we-do .wwd-container .wwd-item {
+    #what-we-do .wwd-container .wwd-item {
       float: left;
       margin-left: 126px;
       text-align: center; }
-      .what-we-do .wwd-container .wwd-item .picture {
+      #what-we-do .wwd-container .wwd-item .picture {
         display: inline-block;
         border-radius: 50%;
         border: 8px solid #fff;
         -webkit-box-shadow: 0 0 5px #e7e7e7;
         box-shadow: 0 0 5px #e7e7e7; }
-      .what-we-do .wwd-container .wwd-item h3 {
+      #what-we-do .wwd-container .wwd-item h3 {
         font-size: 22px;
         margin-top: 20px;
         line-height: 1.3; }
-    .what-we-do .wwd-container .wwd-item:first-child {
+    #what-we-do .wwd-container .wwd-item:first-child {
       margin-left: 0; }
 
 #process {
@@ -282,7 +282,7 @@ body {
   background: #f0f0f0;
   padding-top: 90px;
   padding-bottom: 57px; }
-  #process h2, #process .reviews .sub-text, .reviews #process .sub-text, #process .what-we-do .sub-text, .what-we-do #process .sub-text {
+  #process h2, #process #reviews .sub-text, #reviews #process .sub-text, #process #what-we-do .sub-text, #what-we-do #process .sub-text {
     width: 100%;
     text-align: center;
     font-size: 38px;
@@ -362,7 +362,7 @@ body {
   position: relative;
   z-index: 2;
   padding-top: 90px; }
-  #team h2, #team .reviews .sub-text, .reviews #team .sub-text, #team .what-we-do .sub-text, .what-we-do #team .sub-text {
+  #team h2, #team #reviews .sub-text, #reviews #team .sub-text, #team #what-we-do .sub-text, #what-we-do #team .sub-text {
     font-size: 38px;
     width: 100%;
     text-align: center;
