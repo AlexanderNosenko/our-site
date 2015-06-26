@@ -27,8 +27,12 @@ p {
   margin: 1em 0; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  min-width: 1300px; }
 
+@media screen and (max-width: 1350px) {
+  nav.circles {
+    display: none; } }
 .content-container {
   width: 1300px;
   margin: 0 auto; }
@@ -301,7 +305,9 @@ nav.circles {
           padding: 6px 28px;
           border-radius: 3px;
           border: 1px solid #fff;
-          cursor: pointer; }
+          cursor: pointer;
+          color: #fff;
+          text-decoration: none; }
       #projects .portfolio-works .portfolio-item:hover .mask {
         -webkit-transition-property: opacity;
         transition-property: opacity;
